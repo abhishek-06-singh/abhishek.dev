@@ -13,7 +13,9 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route path="/home" component={Home} />
+          <Route path="/loading" component={Loading} />
+          <Redirect from="/" to="/home" />
         </Switch>
       </Router>
     </div>
